@@ -11,7 +11,7 @@ class ProductRecommender:
 
         self.X, self.customer_mapper, self.product_mapper, self.customer_inv_mapper, self.product_inv_mapper = self.create_sparse_matrix()
         
-
+ 
     def create_sparse_matrix(self):
         # number of unique customers and products
         num_customers = len(self.ratings['customer_id'].unique())
